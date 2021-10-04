@@ -61,21 +61,18 @@ def main() :
 
 
     for animalia in List :
+        
+        printSpeed = ""
+
         if animalia['Gender'] == "fem" :
             deter = "La"
 
         if animalia["Speed"] == Sprint :
             printSpeed = "et il est le plus rapide"
         
-        elif animalia["Speed"] < Sprint :
-            printSpeed =""
-
-
         if animalia["Speed"] == Slow :
             printSpeed = "et il est le plus lent"
         
-        elif animalia["Speed"] < Slow :
-            printSpeed =""
         
 
         print(f"{deter} {animalia['Animals']} {animalia['Colors']} court à {animalia['Speed']}km/h {printSpeed}")
